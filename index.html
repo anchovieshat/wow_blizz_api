@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet">
+		<script src="jquery-3.1.1.min.js"></script>
+		<script src="api_pull.js"></script>
+	</head>
+	<body>
+		<div style="text-align: center;">
+			<img id="eagleimg" src="eagledream_logo.png" alt="EagleDream Logo"><br>
+			<input type="text" id="character" placeholder="Character" class="text_input"><br>
+			<input type="text" id="world" placeholder="Realm" class="text_input"><br>
+			<input type="button" onclick="repoll()" value="Search" class="button"><br>
+			<p id="error_msg"></p>
+		</div>
+		<div class="container">
+			<div class="sub_container">
+				<div class="item_container">
+					<div class="item">
+					<h4 id="character_name"></h4>
+					<p id="level"></p>
+					<p id="class"></p>
+					</div>
+					<div class="item">
+						<table>
+							<tr><th>Attributes</th></tr>
+							<tr><td class="tag">Health</td><td id="health" class="value">..</td></tr>
+							<tr><td class="tag">Strength</td><td id="strength" class="value">..</td></tr>
+							<tr><td class="tag">Agility</td><td id="agility" class="value">..</td></tr>
+							<tr><td class="tag">Intellect</td><td id="intellect" class="value">..</td></tr>
+							<tr><td class="tag">Stamina</td><td id="stamina" class="value">..</td></tr>
+						</table>
+						<table>
+							<tr><th class="tag">Weapon Stats</th></tr>
+							<tr><td class="tag">Damage</td><td id="damage" class="value">..</td></tr>
+							<tr><td class="tag">Attack Speed</td><td id="attack_speed" class="value">..</td></tr>
+							<tr><td class="tag">DPS</td><td id="dps" class="value">..</td></tr>
+						</table>
+						<table>
+							<tr><th>Spell</th></tr>
+							<tr><td class="tag">Mana Regen / 5s</td><td id="mana_regen" class="value">..</td></tr>
+						</table>
+					</div>
+					<div class="item">
+						<table>
+							<tr><th>Defense</th></tr>
+							<tr><td class="tag">Armor</td><td id="armor" class="value">..</td></tr>
+							<tr><td class="tag">Dodge</td><td id="dodge" class="value">..</td></tr>
+							<tr><td class="tag">Parry</td><td id="parry" class="value">..</td></tr>
+							<tr><td class="tag">Block</td><td id="block" class="value">..</td></tr>
+						</table>
+						<table>
+							<tr><th>Enhancements</th></tr>
+							<tr><td class="tag">Crit</td><td id="crit" class="value">..</td></tr>
+							<tr><td class="tag">Haste</td><td id="haste" class="value">..</td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="sub_container">
+				<table>
+					<tr><th>Character Items</th><th style="text-align: center;">Item Name</th><th>Buy Price</th></tr>
+					<tr><td class="tag">Head</td><td id="head_name" class="name">..</td><td id="head_price" class="value">..</td></tr>
+					<tr><td class="tag">Neck</td><td id="neck_name" class="name">..</td><td id="neck_price" class="value">..</td></tr>
+					<tr><td class="tag">Shoulders</td><td id="shoulders_name" class="name">..</td><td id="shoulders_price" class="value">..</td></tr>
+					<tr><td class="tag">Back</td><td id="back_name" class="name">..</td><td id="back_price" class="value">..</td></tr>
+					<tr><td class="tag">Chest</td><td id="chest_name" class="name">..</td><td id="chest_price" class="value">..</td></tr>
+					<tr><td class="tag">Shirt</td><td id="shirt_name" class="name">..</td><td id="shirt_price" class="value">..</td></tr>
+					<tr><td class="tag">Hands</td><td id="hands_name" class="name">..</td><td id="hands_price" class="value">..</td></tr>
+					<tr><td class="tag">Wrist</td><td id="wrist_name" class="name">..</td><td id="wrist_price" class="value">..</td></tr>
+					<tr><td class="tag">Finger 1</td><td id="finger1_name" class="name">..</td><td id="finger1_price" class="value">..</td></tr>
+					<tr><td class="tag">Finger 2</td><td id="finger2_name" class="name">..</td><td id="finger2_price" class="value">..</td></tr>
+					<tr><td class="tag">Main Hand</td><td id="main_hand_name" class="name">..</td><td id="main_hand_price" class="value">..</td></tr>
+					<tr><td class="tag">Waist</td><td id="waist_name" class="name">..</td><td id="waist_price" class="value">..</td></tr>
+					<tr><td class="tag">Legs</td><td id="legs_name" class="name">..</td><td id="legs_price" class="value">..</td></tr>
+					<tr><td class="tag">Feet</td><td id="feet_name" class="name">..</td><td id="feet_price" class="value">..</td></tr>
+					<tr><td class="tag">Trinket 1</td><td id="trinket1_name" class="name">..</td><td id="trinket1_price" class="value">..</td></tr>
+					<tr><td class="tag">Trinket 2</td><td id="trinket2_name" class="name">..</td><td id="trinket2_price" class="value">..</td></tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
